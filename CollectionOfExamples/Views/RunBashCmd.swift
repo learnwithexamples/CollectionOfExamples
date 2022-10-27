@@ -15,28 +15,31 @@ struct RunBashCmd: View {
 
   var body: some View {
       VStack {
-          Text("Checker Tool")
-              .font(.largeTitle)
-              .padding()
-          HStack {
-              Button(action: {
-                  let process = Process()
-                  let pipe = Pipe()
-                  process.standardOutput = pipe
-                  process.launchPath = "/usr/bin/osascript"
-//                process.arguments = ["-e", "do shell script \"sh /Users/learnwithexamples/github/CollectionOfExamples/mkFile.sh\" with administrator privileges"]
-                  process.arguments = ["-e", "do shell script \"sh \(script)\""]
-                  process.launch()
-                  process.waitUntilExit()
-                  data = String(data: pipe.fileHandleForReading.readDataToEndOfFile(), encoding: .utf8)!
-              }) {
-                  Text(data)
-              }
-              .disabled(isRunning)
-              .padding(.trailing)
-          }
+        Text("Checker Tool")
+          .font(.largeTitle)
+          .padding()
+        HStack {
+          Button(action: {
+            let process = Process()
+            let pipe = Pipe()
+            process.standardOutput = pipe
+            process.launchPath = "/usr/bin/osascript"
+//            process.arguments = ["-e", "do shell script \"sh /Users/learnwithexamples/github/CollectionOfExamples/mkFile.sh\" with administrator privileges"]
+            process.arguments = ["-e", "do shell script \"sh \(script)\""]
+            process.launch()
+            isRunning = true
+            process.waitUntilExit()
+            data = String(data: pipe.fileHandleForReading.readDataToEndOfFile(), encoding: .utf8)!
+            sleep(4)
+            isRunning = false
+        }) {
+            Text(data)
+        }
+        .disabled(isRunning)
+        .padding(.trailing)
       }
-      .frame(maxWidth: .infinity, maxHeight: .infinity)
+    }
+    .frame(maxWidth: .infinity, maxHeight: .infinity)
   }
 }
 
