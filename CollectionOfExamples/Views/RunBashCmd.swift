@@ -30,7 +30,7 @@ struct RunBashCmd: View {
             isRunning = true
             process.waitUntilExit()
             data = String(data: pipe.fileHandleForReading.readDataToEndOfFile(), encoding: .utf8)!
-            sleep(4)
+            sleep(3)
             isRunning = false
         }) {
             Text(data)
