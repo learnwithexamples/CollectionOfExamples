@@ -15,6 +15,7 @@ struct ContentView: View {
           NavigationLink("FileOpen", destination: FileOpen())
           NavigationLink("FileDrop", destination: FileDrop())
           NavigationLink("WebBrowse", destination: WebBrowse())
+          NavigationLink("ReadingView", destination: ReadingView(text: ""))
         }
       }
       .navigationTitle("MySwiftExamples")

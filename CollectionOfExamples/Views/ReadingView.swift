@@ -104,6 +104,7 @@ struct ReadingView: View {
                print(parsedText)
             }
         })
+        .navigationTitle("ReadingView")
     }
 }
 struct ReadingView_Previews: PreviewProvider {
