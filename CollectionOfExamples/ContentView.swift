@@ -14,6 +14,7 @@ struct ContentView: View {
           NavigationLink("RunBashCmd", destination: RunBashCmd())
           NavigationLink("FileOpen", destination: FileOpen())
           NavigationLink("FileDrop", destination: FileDrop())
+          NavigationLink("WebBrowse", destination: WebBrowse())
         }
       }
       .navigationTitle("MySwiftExamples")
