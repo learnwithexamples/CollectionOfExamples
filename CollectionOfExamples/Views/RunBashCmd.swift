@@ -19,7 +19,7 @@ struct RunBashCmd: View {
           .font(.largeTitle)
           .padding()
         HStack {
-          Button(action: {
+          Button(data) {
             let process = Process()
             let pipe = Pipe()
             process.standardOutput = pipe
@@ -32,14 +32,13 @@ struct RunBashCmd: View {
             data = String(data: pipe.fileHandleForReading.readDataToEndOfFile(), encoding: .utf8)!
             sleep(3)
             isRunning = false
-        }) {
-            Text(data)
         }
         .disabled(isRunning)
         .padding(.trailing)
       }
     }
     .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .navigationTitle("RunBashCmd")
   }
 }
 

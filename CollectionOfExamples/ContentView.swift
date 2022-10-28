@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-          RunBashCmd()
+      NavigationView {
+        List {
+          NavigationLink("RunBashCmd", destination: RunBashCmd())
+          NavigationLink("FileOpen", destination: FileOpen())
+          NavigationLink("FileDrop", destination: FileDrop())
         }
-        .padding()
+      }
+      .navigationTitle("MySwiftExamples")
     }
 }
 

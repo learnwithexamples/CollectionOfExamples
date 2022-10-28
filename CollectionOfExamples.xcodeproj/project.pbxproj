@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9032711F290BA4F500850FA4 /* FileOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9032711E290BA4F500850FA4 /* FileOpen.swift */; };
+		90327121290BA67A00850FA4 /* FileDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90327120290BA67A00850FA4 /* FileDrop.swift */; };
 		90D13191290A50FA009413DA /* RunBashCmd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D13190290A50FA009413DA /* RunBashCmd.swift */; };
 		90E48E34290254C900C0A4D5 /* CollectionOfExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E48E33290254C900C0A4D5 /* CollectionOfExamplesApp.swift */; };
 		90E48E36290254C900C0A4D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E48E35290254C900C0A4D5 /* ContentView.swift */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9032711E290BA4F500850FA4 /* FileOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOpen.swift; sourceTree = "<group>"; };
+		90327120290BA67A00850FA4 /* FileDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDrop.swift; sourceTree = "<group>"; };
 		90D13190290A50FA009413DA /* RunBashCmd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunBashCmd.swift; sourceTree = "<group>"; };
 		90E48E30290254C900C0A4D5 /* CollectionOfExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionOfExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E48E33290254C900C0A4D5 /* CollectionOfExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionOfExamplesApp.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				90D13190290A50FA009413DA /* RunBashCmd.swift */,
+				9032711E290BA4F500850FA4 /* FileOpen.swift */,
+				90327120290BA67A00850FA4 /* FileDrop.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,7 +166,9 @@
 			files = (
 				90E48E36290254C900C0A4D5 /* ContentView.swift in Sources */,
 				90E48E34290254C900C0A4D5 /* CollectionOfExamplesApp.swift in Sources */,
+				90327121290BA67A00850FA4 /* FileDrop.swift in Sources */,
 				90D13191290A50FA009413DA /* RunBashCmd.swift in Sources */,
+				9032711F290BA4F500850FA4 /* FileOpen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
