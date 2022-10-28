@@ -1,6 +1,9 @@
 import SwiftUI
 import WebKit
 
+// https://stackoverflow.com/questions/67470061/type-swiftuiwebview-does-not-conform-to-protocolnsviewrepresentable
+// https://www.appsloveworld.com/swift/100/94/execute-javascript-confirm-in-swiftui-using-wkwebview
+
 struct WebBrowse: View {
     var body: some View {
       WebView(url: URL(string: "https://nrexplained.com"))
