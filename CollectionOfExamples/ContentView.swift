@@ -12,6 +12,7 @@ struct ContentView: View {
       NavigationView {
         List {
           NavigationLink("RunBashCmd", destination: RunBashCmd())
+          NavigationLink("RunNodeCmd", destination: RunNodeCmd())
           NavigationLink("FileOpen", destination: FileOpen())
           NavigationLink("FileDrop", destination: FileDrop())
           NavigationLink("WebBrowse", destination: WebBrowse())
