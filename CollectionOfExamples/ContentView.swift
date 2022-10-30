@@ -16,6 +16,8 @@ struct ContentView: View {
           NavigationLink("RunWebServer", destination: RunWebServer())
           NavigationLink("FileOpen", destination: FileOpen())
           NavigationLink("FileDrop", destination: FileDrop())
+          NavigationLink("LoadLocalImage", destination: LoadLocalImage())
+//          NavigationLink("LoadImage", destination: LoadImage())
           NavigationLink("WebBrowse", destination: WebBrowse())
           NavigationLink("ReadingView", destination: ReadingView(text: ""))
         }
