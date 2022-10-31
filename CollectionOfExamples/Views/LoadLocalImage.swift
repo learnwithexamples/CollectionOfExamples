@@ -26,9 +26,10 @@ struct LoadLocalImage: View {
             
             // display image
             providers.first!.loadDataRepresentation(forTypeIdentifier: "public.file-url", completionHandler: { (data, error) in
-              if let data = data, let path = NSString(data: data, encoding: 4), let url = URL(string: path as String) {
-//                image = NSImage(contentsOf: url) ?? NSImage()
-                image = NSImage(contentsOf: URL(string: "https://media.timeout.com/images/105918414/1372/772/image.jpg")!) ?? NSImage()
+              if let data = data, let path = NSString(data: data, encoding: 4), var url = URL(string: path as String) {
+                image = NSImage(contentsOf: url) ?? NSImage()
+//                image = NSImage(contentsOf: URL(string: "https://media.timeout.com/images/105918414/1372/772/image.jpg")!) ?? NSImage()
+//                image = NSImage(contentsOf: URL(string: "file:////Users/learnwithexamples/Downloads/witch.svg")!) ?? NSImage()
               }
             })
 
