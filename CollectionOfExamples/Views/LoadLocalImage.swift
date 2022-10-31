@@ -12,8 +12,10 @@ struct LoadLocalImage: View {
   @State var image: NSImage = NSImage(systemSymbolName: "plus", accessibilityDescription: nil) ?? NSImage()
     var body: some View {
       ScrollView {
-        TextField("Path:", text: $message)
-          .padding(.all)
+        HStack {
+          TextField("Path:", text: $message)
+            .padding(.all)
+        }
         Image(nsImage: image)
           .padding(100)
           .background(.white)
@@ -32,9 +34,22 @@ struct LoadLocalImage: View {
 //                image = NSImage(contentsOf: URL(string: "file:////Users/learnwithexamples/Downloads/witch.svg")!) ?? NSImage()
               }
             })
-
             return true
           })
+        DisplayHtml(htmlString: .constant("""
+    <svg height="150" width="400" style="border:1px solid black">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="150" y="86">SVG</text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+    """))
+        .frame(width: 500, height: 50)
         Button("Sign in") {
           signIn()
         }
