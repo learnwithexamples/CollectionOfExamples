@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9015CB52291CC45000A5D76F /* SvgViewSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015CB51291CC45000A5D76F /* SvgViewSimple.swift */; };
+		9015CB54291CC97700A5D76F /* Text2Diagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015CB53291CC97700A5D76F /* Text2Diagram.swift */; };
 		9032711F290BA4F500850FA4 /* FileOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9032711E290BA4F500850FA4 /* FileOpen.swift */; };
 		90327121290BA67A00850FA4 /* FileDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90327120290BA67A00850FA4 /* FileDrop.swift */; };
 		90327123290BAA4700850FA4 /* WebBrowse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90327122290BAA4700850FA4 /* WebBrowse.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9015CB51291CC45000A5D76F /* SvgViewSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvgViewSimple.swift; sourceTree = "<group>"; };
+		9015CB53291CC97700A5D76F /* Text2Diagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text2Diagram.swift; sourceTree = "<group>"; };
 		9032711E290BA4F500850FA4 /* FileOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOpen.swift; sourceTree = "<group>"; };
 		90327120290BA67A00850FA4 /* FileDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDrop.swift; sourceTree = "<group>"; };
 		90327122290BAA4700850FA4 /* WebBrowse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBrowse.swift; sourceTree = "<group>"; };
@@ -97,12 +101,14 @@
 			isa = PBXGroup;
 			children = (
 				90D13190290A50FA009413DA /* RunBashCmd.swift */,
+				9015CB53291CC97700A5D76F /* Text2Diagram.swift */,
 				90327126290DF2EE00850FA4 /* RunNodeCmd.swift */,
 				9032711E290BA4F500850FA4 /* FileOpen.swift */,
 				90327120290BA67A00850FA4 /* FileDrop.swift */,
 				90C558EB290E201300AF946A /* LoadImage.swift */,
 				90C558ED290E2AC800AF946A /* LoadLocalImage.swift */,
 				90C558EF290F772C00AF946A /* SVGview.swift */,
+				9015CB51291CC45000A5D76F /* SvgViewSimple.swift */,
 				90C558F1290F79DA00AF946A /* DisplayHtml.swift */,
 				90327122290BAA4700850FA4 /* WebBrowse.swift */,
 				90327124290BB1BA00850FA4 /* ReadingView.swift */,
@@ -193,6 +199,7 @@
 				90E48E36290254C900C0A4D5 /* ContentView.swift in Sources */,
 				90C558F0290F772C00AF946A /* SVGview.swift in Sources */,
 				90C558EE290E2AC800AF946A /* LoadLocalImage.swift in Sources */,
+				9015CB52291CC45000A5D76F /* SvgViewSimple.swift in Sources */,
 				90C558F2290F79DA00AF946A /* DisplayHtml.swift in Sources */,
 				90327127290DF2EE00850FA4 /* RunNodeCmd.swift in Sources */,
 				90E48E34290254C900C0A4D5 /* CollectionOfExamplesApp.swift in Sources */,
@@ -200,6 +207,7 @@
 				90D13191290A50FA009413DA /* RunBashCmd.swift in Sources */,
 				90327125290BB1BA00850FA4 /* ReadingView.swift in Sources */,
 				9032711F290BA4F500850FA4 /* FileOpen.swift in Sources */,
+				9015CB54291CC97700A5D76F /* Text2Diagram.swift in Sources */,
 				90C558EA290DFA1500AF946A /* RunWebServer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

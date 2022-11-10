@@ -26,9 +26,8 @@ struct SVGView: NSViewRepresentable {
         if self.svgString != context.coordinator.lastLoadedString {
             context.coordinator.lastLoadedString = self.svgString
             
-            let htmlString = self.header + self.style +
-                "<meta name=\"viewport\" content=\"initial-scale=1.0\"/>" +
-                self.svgString + self.footer
+//          let htmlString = self.header + self.style + "<meta name=\"viewport\" content=\"initial-scale=1.0\"/>" + self.svgString + self.footer
+          let htmlString = self.svgString
             uiView.loadHTMLString(htmlString, baseURL: Bundle.main.bundleURL)
         }
     }

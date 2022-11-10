@@ -1,0 +1,3 @@
+@startuml
+BOB -> XX: ho
+@enduml -pipe
