@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		901253E32939B34B009181C6 /* DispImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901253E22939B34B009181C6 /* DispImage.swift */; };
 		9015CB52291CC45000A5D76F /* SvgViewSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015CB51291CC45000A5D76F /* SvgViewSimple.swift */; };
 		9015CB54291CC97700A5D76F /* Text2Diagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9015CB53291CC97700A5D76F /* Text2Diagram.swift */; };
 		9032711F290BA4F500850FA4 /* FileOpen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9032711E290BA4F500850FA4 /* FileOpen.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		901253E22939B34B009181C6 /* DispImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispImage.swift; sourceTree = "<group>"; };
 		9015CB51291CC45000A5D76F /* SvgViewSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SvgViewSimple.swift; sourceTree = "<group>"; };
 		9015CB53291CC97700A5D76F /* Text2Diagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text2Diagram.swift; sourceTree = "<group>"; };
 		9032711E290BA4F500850FA4 /* FileOpen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOpen.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				9032711E290BA4F500850FA4 /* FileOpen.swift */,
 				90327120290BA67A00850FA4 /* FileDrop.swift */,
 				90C558EB290E201300AF946A /* LoadImage.swift */,
+				901253E22939B34B009181C6 /* DispImage.swift */,
 				90C558ED290E2AC800AF946A /* LoadLocalImage.swift */,
 				90C558EF290F772C00AF946A /* SVGview.swift */,
 				9015CB51291CC45000A5D76F /* SvgViewSimple.swift */,
@@ -207,6 +210,7 @@
 				90D13191290A50FA009413DA /* RunBashCmd.swift in Sources */,
 				90327125290BB1BA00850FA4 /* ReadingView.swift in Sources */,
 				9032711F290BA4F500850FA4 /* FileOpen.swift in Sources */,
+				901253E32939B34B009181C6 /* DispImage.swift in Sources */,
 				9015CB54291CC97700A5D76F /* Text2Diagram.swift in Sources */,
 				90C558EA290DFA1500AF946A /* RunWebServer.swift in Sources */,
 			);

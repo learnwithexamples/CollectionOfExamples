@@ -20,6 +20,7 @@ struct ContentView: View {
 //          NavigationLink("LoadImage", destination: LoadImage())
           NavigationLink("WebBrowse", destination: WebBrowse())
           NavigationLink("ReadingView", destination: ReadingView(text: ""))
+          NavigationLink("Text2Diagram", destination: Text2Diagram(txt: .constant("IloveU")))
         }
       }
       .navigationTitle("MySwiftExamples")
