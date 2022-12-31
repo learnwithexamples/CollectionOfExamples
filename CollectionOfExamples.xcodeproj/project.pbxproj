@@ -21,6 +21,10 @@
 		90C558F0290F772C00AF946A /* SVGview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C558EF290F772C00AF946A /* SVGview.swift */; };
 		90C558F2290F79DA00AF946A /* DisplayHtml.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90C558F1290F79DA00AF946A /* DisplayHtml.swift */; };
 		90CCC7C4295FA8B7004D2229 /* DispAsyncImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CCC7C3295FA8B7004D2229 /* DispAsyncImage.swift */; };
+		90CCC7C7295FFFBE004D2229 /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CCC7C6295FFFBE004D2229 /* Screen2.swift */; };
+		90CCC7C929600039004D2229 /* CircleGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CCC7C829600039004D2229 /* CircleGroupView.swift */; };
+		90CCC7CB296005A6004D2229 /* Screen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CCC7CA296005A6004D2229 /* Screen1.swift */; };
+		90CCC7CD29600976004D2229 /* Screen0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CCC7CC29600976004D2229 /* Screen0.swift */; };
 		90D13191290A50FA009413DA /* RunBashCmd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D13190290A50FA009413DA /* RunBashCmd.swift */; };
 		90E48E34290254C900C0A4D5 /* CollectionOfExamplesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E48E33290254C900C0A4D5 /* CollectionOfExamplesApp.swift */; };
 		90E48E36290254C900C0A4D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E48E35290254C900C0A4D5 /* ContentView.swift */; };
@@ -43,6 +47,10 @@
 		90C558EF290F772C00AF946A /* SVGview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SVGview.swift; sourceTree = "<group>"; };
 		90C558F1290F79DA00AF946A /* DisplayHtml.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayHtml.swift; sourceTree = "<group>"; };
 		90CCC7C3295FA8B7004D2229 /* DispAsyncImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispAsyncImage.swift; sourceTree = "<group>"; };
+		90CCC7C6295FFFBE004D2229 /* Screen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2.swift; sourceTree = "<group>"; };
+		90CCC7C829600039004D2229 /* CircleGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGroupView.swift; sourceTree = "<group>"; };
+		90CCC7CA296005A6004D2229 /* Screen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1.swift; sourceTree = "<group>"; };
+		90CCC7CC29600976004D2229 /* Screen0.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen0.swift; sourceTree = "<group>"; };
 		90D13190290A50FA009413DA /* RunBashCmd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunBashCmd.swift; sourceTree = "<group>"; };
 		90E48E30290254C900C0A4D5 /* CollectionOfExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionOfExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90E48E33290254C900C0A4D5 /* CollectionOfExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionOfExamplesApp.swift; sourceTree = "<group>"; };
@@ -63,6 +71,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90CCC7C5295FFC98004D2229 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				90CCC7C6295FFFBE004D2229 /* Screen2.swift */,
+				90CCC7CA296005A6004D2229 /* Screen1.swift */,
+				90CCC7CC29600976004D2229 /* Screen0.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		90E48E27290254C900C0A4D5 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +100,7 @@
 		90E48E32290254C900C0A4D5 /* CollectionOfExamples */ = {
 			isa = PBXGroup;
 			children = (
+				90CCC7C5295FFC98004D2229 /* Screens */,
 				90E48E432902562A00C0A4D5 /* Models */,
 				90E48E422902562100C0A4D5 /* Views */,
 				90E48E33290254C900C0A4D5 /* CollectionOfExamplesApp.swift */,
@@ -119,6 +138,7 @@
 				90327124290BB1BA00850FA4 /* ReadingView.swift */,
 				90C558E9290DFA1500AF946A /* RunWebServer.swift */,
 				90CCC7C3295FA8B7004D2229 /* DispAsyncImage.swift */,
+				90CCC7C829600039004D2229 /* CircleGroupView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,14 +221,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				90327123290BAA4700850FA4 /* WebBrowse.swift in Sources */,
+				90CCC7CB296005A6004D2229 /* Screen1.swift in Sources */,
 				90C558EC290E201300AF946A /* LoadImage.swift in Sources */,
 				90E48E36290254C900C0A4D5 /* ContentView.swift in Sources */,
 				90C558F0290F772C00AF946A /* SVGview.swift in Sources */,
 				90C558EE290E2AC800AF946A /* LoadLocalImage.swift in Sources */,
 				9015CB52291CC45000A5D76F /* SvgViewSimple.swift in Sources */,
 				90C558F2290F79DA00AF946A /* DisplayHtml.swift in Sources */,
+				90CCC7C929600039004D2229 /* CircleGroupView.swift in Sources */,
+				90CCC7CD29600976004D2229 /* Screen0.swift in Sources */,
 				90327127290DF2EE00850FA4 /* RunNodeCmd.swift in Sources */,
 				90E48E34290254C900C0A4D5 /* CollectionOfExamplesApp.swift in Sources */,
+				90CCC7C7295FFFBE004D2229 /* Screen2.swift in Sources */,
 				90327121290BA67A00850FA4 /* FileDrop.swift in Sources */,
 				90D13191290A50FA009413DA /* RunBashCmd.swift in Sources */,
 				90327125290BB1BA00850FA4 /* ReadingView.swift in Sources */,
