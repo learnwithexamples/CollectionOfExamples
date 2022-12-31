@@ -21,6 +21,7 @@ struct ContentView: View {
           NavigationLink("WebBrowse", destination: WebBrowse())
           NavigationLink("ReadingView", destination: ReadingView(text: ""))
           NavigationLink("Text2Diagram", destination: Text2Diagram(txt: .constant("IloveU")))
+          NavigationLink("DispAsyncImage", destination: DispAsyncImage(imageURL: "https://credo.academy/credo-academy@3x.png"))
         }
       }
       .navigationTitle("MySwiftExamples")
