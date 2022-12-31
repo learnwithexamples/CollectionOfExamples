@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Screen2: View {
-  @AppStorage("screen1") var isScreen1: Bool = false
+  @AppStorage("screen") var nScreen: Int = 1
   @State private var isAnimating: Bool = false
     var body: some View {
       VStack(spacing: 20) {
@@ -37,7 +37,7 @@ struct Screen2: View {
         Button(action: {
           withAnimation {
 //            playSound(sound: "success", type: "m4a")
-            isScreen1 = true
+            nScreen = 1
 //            isAnimating.toggle()
           }
         }) {

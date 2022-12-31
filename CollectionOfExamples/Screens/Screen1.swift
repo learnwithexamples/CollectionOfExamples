@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Screen1: View {
-  @AppStorage("screen1") var isScreen1: Bool = true
+  @AppStorage("screen") var nScreen: Int = 1
   @State private var buttonWidth: Double = 800
   @State private var buttonOffset: CGFloat = 0
   @State private var isAnimating: Bool = true
@@ -38,7 +38,7 @@ struct Screen1: View {
           )
           Spacer()
           Button(action: {
-            isScreen1 = false
+            nScreen = 2
           }) {
             Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
             Text("Start")

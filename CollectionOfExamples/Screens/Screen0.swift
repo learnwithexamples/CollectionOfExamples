@@ -7,11 +7,11 @@
 import SwiftUI
 
 struct Screen0: View {
-  @AppStorage("screen1") var isScreen1: Bool = true
+  @AppStorage("screen") var nScreen: Int = 1
   
   var body: some View {
     ZStack {
-      if isScreen1 {
+      if nScreen == 1 {
         Screen1()
       } else {
         Screen2()
